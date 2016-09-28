@@ -18,8 +18,8 @@
 >期望工作
 
  - 期望职位：前端开发
- - 期望薪资：税前月薪18~20k
- - 期望城市：江苏 苏州
+ - 期望薪资：18k
+ - 期望城市：苏州
 
 ---
 
@@ -95,9 +95,9 @@
 
 # **技能清单**
 
-- 熟悉 java/nodejs
-- 熟练 HTML5/CSS3/Bootstrap/Jquery/canvas，熟悉jqm/react相关/mui,了解ng2
-- 熟悉 webpack/coolie/fis模块化构建工具
+- 熟悉 java、nodejs
+- 精通 HTML5/CSS3/js/Jquery，熟练canvas/Bootstrap/jqm,熟悉react相关/mui,了解ng2
+- 熟练 webpack/coolie模块化构建工具，熟悉fis
 - 熟悉 MySQL/Oracle
 - 熟练 版本管理、文档和自动化部署工具：Svn/Git
-- 熟练 微信应用/支付宝开放平台
+- 熟练 微信应用,熟悉支付宝开放平台
