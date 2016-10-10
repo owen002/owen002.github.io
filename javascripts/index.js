@@ -1,0 +1,59 @@
+(function () {
+    var pageTitles = [], pageContext = [], pageAddr = [], sorts = ['工具', '前端'], sortsIndex = {};
+    sortsIndex = {
+        0: [0],
+        1: [1, 2]
+    };
+    //markdown语法
+    pageTitles.push('markdown语法');
+    pageContext.push('markdown的基本使用方法');
+    pageAddr.push('https://owen002.github.io/pages/myblog/Markdown.html');
+    //css画三角形
+    pageTitles.push('css画三角形');
+    pageContext.push('使用纯css画一个三角形');
+    pageAddr.push('https://owen002.github.io/pages/myblog/triangle-css.html');
+    //数组去重
+    pageTitles.push('数组去重');
+    pageContext.push('js数组去重的几种方法');
+    pageAddr.push('https://owen002.github.io/pages/myblog/arr_repeat.html');
+
+    var $sideBar = $('#sidebar');
+    var page = {
+        init: function () {
+            page.drawContent();
+            page.drawSide();
+            page.bind();
+        },
+        drawContent: function (sort) {
+            var pageDom = '', sortArr;
+            if (sort || sort === 0) {
+                sortArr = sortsIndex[sort];
+            }
+            for (var i = 0, j = pageTitles.length; i < j; i++) {
+                if (sortArr) {
+                    if (sortArr.indexOf(i) >= 0) {
+                        pageDom += '<a href="' + pageAddr[i] + '"><div class="article"><h3>' + pageTitles[i] + '</h3><p>' + pageContext[i] + '</p></div></a>'
+                    }
+                } else {
+                    pageDom += '<a href="' + pageAddr[i] + '"><div class="article"><h3>' + pageTitles[i] + '</h3><p>' + pageContext[i] + '</p></div></a>'
+                }
+            }
+            $('#main-content').html(pageDom);
+        },
+        drawSide: function () {
+            var sideDom = '';
+            for (var i = 0, j = sorts.length; i < j; i++) {
+                sideDom += '<p class="side-sorts" data-id="' + i + '"><a>' + sorts[i] + '</a></p>'
+            }
+            $sideBar.html(sideDom);
+        },
+        bind: function () {
+            $sideBar.on('click', '.side-sorts', function () {
+                var $this = $(this);
+                page.drawContent($this.data('id'));
+            })
+        }
+    };
+
+    page.init();
+})();
