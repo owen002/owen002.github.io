@@ -14,11 +14,12 @@
  - 本科/苏州科技学院 
  - 工作年限：4年
  - Github: [https://github.com/owen002](https://github.com/owen002)
- 
+ - Github Pages: [https://owen002.github.io](https://owen002.github.io)
+
 >期望工作
 
  - 期望职位：前端开发
- - 期望薪资：18k
+ - 期望薪资：17k
  - 期望城市：苏州
 
 ---
@@ -28,7 +29,8 @@
 ## 苏州游戏蜗牛（ 2015年8月 ~ 至今 ）
 
 ### 1.蜗牛移动经销商项目「[<font color=#0000cd>点击访问</font>](http://jxs.snail.com)」</font>
-经销商项目的开发和维护，使用bootstrap开发，解决了ie8+的兼容性
+经销商项目的开发和维护。使用bootstrap，解决了ie8+的兼容性
+主导了使用coolie构建项目。coolie相对来说配置简单，功能齐全，对各种资源支持较好。
 
 >主要模块
 
@@ -55,7 +57,7 @@
 
 >使用的技术
 
-- css3、zepto开发可拖动式个人中心
+- css3、zepto开发界面
 - 轮播图touchslider，iscroll.js
 - 商城购物车模块(增删改商品、商品计价)，优化接口调用
 - 通过bridge获取手机经纬度，调用地图api获取城市相关信息传递给讯奇对接酒店机票等
@@ -69,7 +71,7 @@
 - 使用canvas开发打地鼠游戏
 - 前端性能优化（GZIP、图片js懒加载）
 
-## 新大陆软件（ 2012年7月 ~ 2014年3月）
+## 新大陆软件（ 2012年10月 ~ 2014年3月）
 
 ### 北京移动网上营业厅、自助终端、移动轻应用wap「[<font color=#0000cd>点击访问</font>](http://shop.10086.cn/i/?f=rechargecredit)」</font>
 负责北京移动网厅充值模块、移动wap端、自助终端后端java开发
@@ -84,7 +86,7 @@
 #其他项目
 ###包租妹房地产项目「[<font color=#0000cd>点击访问</font>](http://www.baozumei.com)」</font>
 
-使用mui开发，有微信公众号、wap端、web端、安卓和ios端。
+房地产项目，使用mui开发，有微信公众号、wap端、web端、安卓和ios端，主要功能模块有定位、分享、下拉菜单、分页。
 >使用的技术
 
 - mui，mustache，jquery.video等
@@ -96,8 +98,8 @@
 # **技能清单**
 
 - 熟悉 java、nodejs
-- 精通 HTML5/CSS3/js/Jquery，熟练canvas/Bootstrap/jqm,熟悉react相关/mui,了解ng2
+- 精通 HTML5/CSS3/js/Jquery，熟练canvas/Bootstrap,熟悉vue相关/react相关/mui,了解ng2
 - 熟练 webpack/coolie模块化构建工具，熟悉fis
-- 熟悉 MySQL/Oracle
+- 熟悉 MySQL/Oracle/redis
 - 熟练 版本管理、文档和自动化部署工具：Svn/Git
-- 熟练 微信应用,熟悉支付宝开放平台
+- 熟练 微信开发,熟悉支付宝开放平台
