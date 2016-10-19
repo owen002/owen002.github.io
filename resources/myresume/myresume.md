@@ -103,3 +103,4 @@
 - 熟悉 MySQL/Oracle/redis
 - 熟练 版本管理、文档和自动化部署工具：Svn/Git
 - 熟练 微信开发,熟悉支付宝开放平台
+- 熟练使用photoshop切图
