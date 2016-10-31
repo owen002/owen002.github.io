@@ -98,7 +98,7 @@
 # **技能清单**
 
 - 熟悉 java、nodejs
-- 精通 HTML5/CSS3/js/Jquery，熟练canvas/Bootstrap,熟悉vue相关/react相关/mui,了解ng2
+- 精通 HTML5/CSS3/js/Jquery，熟练canvas/Bootstrap/vue相关,熟悉/react相关/mui,了解ng2
 - 熟练 webpack/coolie模块化构建工具，熟悉fis
 - 熟悉 MySQL/Oracle/redis
 - 熟练 版本管理、文档和自动化部署工具：Svn/Git
