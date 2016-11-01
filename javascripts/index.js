@@ -3,7 +3,7 @@
     sortsIndex = {
         0: [0],
         1: [1, 2, 4],
-        3: [3]
+        2: [3]
     };
     //markdown语法0
     pageTitles.push('markdown语法');
