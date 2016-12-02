@@ -107,5 +107,3 @@
         //2 success undefined
 
         //使用Deferred和promise的区别：Deferred对象执行reject方法之后会执行之后所有then回调方法中的reject的方法，而promise会回调之后then中的第一个回调方法即resolve方法
-
-还可以使用rxjs来实现

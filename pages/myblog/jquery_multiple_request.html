@@ -357,6 +357,50 @@ img {
     //2 error
 </code></pre>
 
+<p>使用es6的promise对象的实现：
+        function getS(f) {
+            return new Promise(function (resolve, reject) {
+                $.ajax({
+                    url: common.API.recall + '17095220851',
+                    dataType: 'json',
+                    cache: false,
+                    success: function (info) {
+                        if(f){
+                            if (info.code == 0) {
+                                resolve(info)
+                            } else {
+                                reject(info)
+                            }
+                        }else{
+                            if (info.code == 0) {
+                                reject(info)
+                            } else {
+                                resolve(info)
+                            }
+                        }
+                    },
+                    error: function () {
+                        reject();
+                    }
+                });
+            });
+        }</p>
+<pre><code>    getS(false).then(function (info) {
+        console.log('1 success',info)
+        return getS(true)
+    }, function (info) {
+        console.log('1 error',info)
+    }).then(function (info) {
+        console.log('2 success',info);
+    }, function (info) {
+        console.log('2 error',info);
+    });
+    //1 error Object {code: 0, msg: &quot;OK&quot;, value: Object}
+    //2 success undefined
+
+    //使用Deferred和promise的区别：Deferred对象执行reject方法之后会执行之后所有then回调方法中的reject的方法，而promise会回调之后then中的第一个回调方法即resolve方法
+</code></pre>
+
 
 </body>
 </html>
