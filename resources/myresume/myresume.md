@@ -11,7 +11,7 @@
 >个人资料
 
  - 何文/男/1990 
- - 本科/苏州科技学院 
+ - 本科/苏州科技学院/应用物理
  - 工作年限：4年
  - Github: [https://github.com/owen002](https://github.com/owen002)
  - Github Pages: [https://owen002.github.io](https://owen002.github.io)
@@ -28,9 +28,19 @@
 
 ## 苏州游戏蜗牛（ 2015年8月 ~ 至今 ）
 
-### 1.蜗牛移动经销商项目「[<font color=#0000cd>点击访问</font>](http://jxs.snail.com)」</font>
-经销商项目的开发和维护。使用bootstrap，解决了ie8+的兼容性
-主导了使用coolie构建项目。coolie相对来说配置简单，功能齐全，对各种资源支持较好。
+### 1.蜗牛移动免商店掌厅「[<font color=#0000cd>点击下载</font>](http://app.snail.com)」</font> 蜗牛移动免商店商户「[<font color=#0000cd>点击下载</font>](http://jxs.snail.com/index.html)」</font>
+免商店客户端免卡部分营销活动，免商店商户客户端免卡业务开发
+
+>主要模块
+
+- css3动画、flex布局进行页面描绘
+- 使用蜗牛内部框架结合vuejs进行模块化开发，使用webpack进行打包发布，使用webpack-dev-server进行热替换HRM
+- 使用vue,vuex,vue-loader,vue-router,vue-resource 基于es6开发，使用babel编译成es5；
+- 使用webpack打包时使用bundle-loader实现组件的懒加载按需加载，防止加载文件过大导致渲染时间加长；
+- 运用jsbridge和客户端进行交流
+
+### 2.蜗牛移动经销商项目「[<font color=#0000cd>点击访问</font>](http://jxs.snail.com)」</font>
+经销商项目的开发和维护。使用jquery+bootstrap，解决了ie8+的兼容性的同时也有很好的体验
 
 >主要模块
 
@@ -40,15 +50,15 @@
 - 使用bootstrap开发响应式单页应用
 - 使用coolie构建
 
-### 2.蜗牛移动免商店掌厅「[<font color=#0000cd>点击下载</font>](http://app.snail.com)」</font>
-免商店客户端免卡部分营销活动
+### 3.ESIM订货会项目「[<font color=#0000cd>点击访问</font>](http://jxs.snail.com/plat/esim/fair.html)」</font>
+主导esim订货会项目的开发、维护，主要是手机号的买卖、开户等操作
 
 >主要模块
 
-- css3动画、flex布局进行页面描绘
-- 运用jsbridge和安卓ios客户端进行交流
-- 倒计时系统
-- 使用蜗牛内部sky框架进行模块化开发
+- 开发自定义count组件，可以很好的兼容各个页面数量的录入、选择
+- 开发公共顶部、边栏、尾部组件并且根据pathname联动高亮显示
+- 使用gulp做打包工具，使用gulp-watch结合gulp的less/cssmin/uglify等插件进行文件实时监控，修改完成后自动热部署
+- 使用nginx作为本地开发服务器,使用nginx反向代理实现接口的访问
 
 ## 苏州宽连十方（ 2014年3月 ~ 2015年8月）
 
@@ -97,10 +107,9 @@
 
 # **技能清单**
 
-- 熟悉 java、nodejs
-- 精通 HTML5/CSS3/js/Jquery，熟练canvas/Bootstrap/vue相关,熟悉/react相关/mui,了解ng2
-- 熟练 webpack/coolie模块化构建工具，熟悉fis
-- 熟悉 MySQL/Oracle/redis
-- 熟练 版本管理、文档和自动化部署工具：Svn/Git
-- 熟练 微信开发,熟悉支付宝开放平台
-- 熟练使用photoshop切图
+- 熟练 java,熟悉nodejs
+- 精通 HTML5/CSS3/js 熟练Jquery/Bootstrap/vue相关,熟悉react/mobx/canvas,了解ng2、mui、rxjs
+- 熟练 webpack模块化构建工具，熟悉gulp
+- 熟悉 微信开发，支付宝开放平台
+- 熟练 Svn/Git
+- 熟练 使用photoshop切图
