@@ -26,9 +26,9 @@
     pageContext.push('使用ES6编写React组件');
     pageAddr.push('https://owen002.github.io/pages/myblog/ES6_React_constructor.html');
     //ie8修复
-    pageTitles.push('ie8 遇到的不支持es5修复');
-    pageContext.push('ie8 遇到的不支持es5修复');
-    pageAddr.push('https://github.com/owen002/ie-fix/blob/master/iefix.html');
+    pageTitles.push('ie8 遇到的不支持es5修复以及项目中遇到的问题');
+    pageContext.push('ie8 遇到的不支持es5修复以及项目中遇到的问题');
+    pageAddr.push('https://github.com/owen002/bugs-fixed-collection');
     //jquery多个顺序请求的问题
     pageTitles.push('使用jQuery发送多个顺序的ajax请求时，promise和deferred对象的使用方法');
     pageContext.push('使用jQuery发送多个顺序的ajax请求时，promise和deferred对象的使用方法');
