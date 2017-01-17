@@ -3,7 +3,7 @@
     sortsIndex = {
         0: [0],
         1: [1, 2, 4],
-        2: [3, 5]
+        2: [3, 5, 6]
     };
     //markdown语法0
     pageTitles.push('markdown语法');
@@ -33,6 +33,10 @@
     pageTitles.push('使用jQuery发送多个顺序的ajax请求时，promise和deferred对象的使用方法');
     pageContext.push('使用jQuery发送多个顺序的ajax请求时，promise和deferred对象的使用方法');
     pageAddr.push('https://owen002.github.io/pages/myblog/jquery_multiple_request.html');
+    //rxjs解决连续请求ajax的问题
+    pageTitles.push('rxjs解决连续请求ajax的问题');
+    pageContext.push('rxjs解决连续请求ajax的问题');
+    pageAddr.push('https://owen002.github.io/pages/myblog/rxjs_ajax.html');
 
     var $sideBar = $('#sidebar');
     var page = {

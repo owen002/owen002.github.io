@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4731558a-67b7-4ce2-a9cd-a394f1770e41" name="Default" comment="resume">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/myblog/rxjs_ajax.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/myblog/rxjs_ajax.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascripts/index.js" afterPath="$PROJECT_DIR$/javascripts/index.js" />
     </list>
@@ -39,8 +41,28 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/javascripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="29" column="47" lean-forward="false" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+            <state relative-caret-position="171">
+              <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rxjs_ajax.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/myblog/rxjs_ajax.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rxjs_ajax.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/myblog/rxjs_ajax.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -139,7 +161,7 @@
       <file leaf-file-name="jquery_multiple_request.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/myblog/jquery_multiple_request.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
+            <state relative-caret-position="1197">
               <caret line="63" column="19" lean-forward="true" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
               <folding />
             </state>
@@ -284,7 +306,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myresume" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -301,6 +327,10 @@
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myblog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -314,15 +344,15 @@
     <property name="js-jscs-nodeInterpreter" value="D:\gnvm\node.exe" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\github.io\owen002.github.io\resources\myresume" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\github.io\owen002.github.io\pages\myblog" />
+      <recent name="E:\github.io\owen002.github.io\resources\myblog" />
       <recent name="E:\github.io\owen002.github.io\resources\myresume" />
       <recent name="E:\github.io\owen002.github.io\resources" />
       <recent name="E:\github.io\owen002.github.io\pages\myresume" />
-      <recent name="E:\github.io\owen002.github.io\pages\myblog" />
-      <recent name="E:\github.io\owen002.github.io\resources\myblog" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\github.io\owen002.github.io\resources\myresume" />
     </key>
   </component>
   <component name="RunManager">
@@ -425,7 +455,8 @@
       <workItem from="1484119252835" duration="4000" />
       <workItem from="1484184514047" duration="125000" />
       <workItem from="1484190078305" duration="294000" />
-      <workItem from="1484190504443" duration="65000" />
+      <workItem from="1484190504443" duration="341000" />
+      <workItem from="1484654078770" duration="106000" />
     </task>
     <task id="LOCAL-00001" summary="add git ignore">
       <created>1474810293507</created>
@@ -487,10 +518,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35302000" />
+    <option name="totallyTimeSpent" value="35684000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1861" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1861" height="1096" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19637959" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -538,23 +569,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/myblog/triangle-css.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="323" column="51" lean-forward="false" selection-start-line="323" selection-start-column="51" selection-end-line="323" selection-end-column="51" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/myresume/myresume.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/myresume/myresume.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -876,16 +890,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/myblog/jquery_multiple_request.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
+        <state relative-caret-position="1197">
           <caret line="63" column="19" lean-forward="true" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/myblog/rxjs_ajax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/myblog/rxjs_ajax.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascripts/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="29" column="47" lean-forward="false" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+        <state relative-caret-position="171">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
           <folding />
         </state>
       </provider>
