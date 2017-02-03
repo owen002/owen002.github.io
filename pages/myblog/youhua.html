@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>myresume</title>
+<title>youhua</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
 /* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
@@ -291,127 +291,36 @@ img {
 </style>
 </head>
 <body>
-<div class="dis-outer">
-    <a href="../../resources/myresume.pdf" download="../../resources/myresume.pdf">导出为PDF</a>
-</div>
-<h1><strong>联系方式</strong></h1>
+<h2>前端性能优化</h2>
+<p>下面这些是我做项目的时候用到的一些常见的优化方案</p>
+<h4>1.减少请求的大小</h4>
 <ul>
-<li>手机：13962514061 </li>
-<li>Email：hewenraul@126.com</li>
-<li>QQ/微信号：294083034</li>
+<li>压缩js、css等文件的体积</li>
+<li>使用imagemin-pngquant插件进行图片的压缩</li>
+<li>nginx gzip压缩</li>
+<li>减少cookie的大小</li>
 </ul>
-<hr />
-<h1><strong>个人信息</strong></h1>
-<blockquote>
-<p>个人资料</p>
-</blockquote>
+<h4>2.减少http请求数目</h4>
 <ul>
-<li>何文/男/1990 </li>
-<li>本科/苏州科技学院/应用物理</li>
-<li>工作年限：4年</li>
-<li>Github: <a href="https://github.com/owen002">https://github.com/owen002</a></li>
-<li>Github Pages: <a href="https://owen002.github.io">https://owen002.github.io</a></li>
+<li>css、js的合并</li>
+<li>使用缓存</li>
+<li>比较小的图片使用inline image---使用base64编码写入</li>
+<li>减少用户可操作之前同步请求的数量，尽快的渲染页面的内容。</li>
+<li>图片可先使用一个默认的占位图片，ready之后再赋值真实的路径。</li>
+<li>避免使用document.write阻塞页面的加载。</li>
 </ul>
-<blockquote>
-<p>期望工作</p>
-</blockquote>
+<h4>3.按需加载</h4>
 <ul>
-<li>期望职位：前端开发</li>
-<li>期望薪资：17k</li>
-<li>期望城市：苏州</li>
+<li>使用分页加载，当用户下拉到最下面的时候再加载第二页</li>
+<li>当用户上拉时才加载网页下方的内容</li>
 </ul>
-<hr />
-<h1><strong>工作经历</strong></h1>
-<h2>苏州游戏蜗牛（ 2015年8月 ~ 至今 ）</h2>
-<h3>1.蜗牛移动免商店掌厅「<a href="http://app.snail.com"><font color=#0000cd>点击下载</font></a>」</font> 蜗牛移动免商店商户「<a href="http://jxs.snail.com/index.html"><font color=#0000cd>点击下载</font></a>」</font></h3>
-<p>免商店客户端免卡部分营销活动，免商店商户客户端免卡业务开发</p>
-<blockquote>
-<p>主要模块</p>
-</blockquote>
+<h4>4.减少dom操作减少reflow</h4>
 <ul>
-<li>css3动画、flex布局进行页面描绘</li>
-<li>使用蜗牛内部框架结合vuejs进行模块化开发，使用webpack进行打包发布，使用webpack-dev-server进行热替换HRM</li>
-<li>使用vue,vuex,vue-loader,vue-router,vue-resource 基于es6开发，使用babel编译成es5；</li>
-<li>使用webpack打包时使用bundle-loader实现组件的懒加载按需加载，防止加载文件过大导致渲染时间加长；</li>
-<li>运用jsbridge和客户端进行交流</li>
+<li>js修改样式的时候使用增加class的方法</li>
+<li>可以使用v-dom（vuejs2.0）</li>
 </ul>
-<h3>2.蜗牛移动经销商项目「<a href="http://jxs.snail.com"><font color=#0000cd>点击访问</font></a>」</font></h3>
-<p>经销商项目的开发和维护。使用jquery+bootstrap，解决了ie8+的兼容性的同时也有很好的体验</p>
-<blockquote>
-<p>主要模块</p>
-</blockquote>
-<ul>
-<li>通过activeX调用dll读取sim卡信息</li>
-<li>使用jquery.form/webuploader/html5 formdata对象进行图片上传</li>
-<li>列表分页展示(用户点击页码/下拉到底部加载)</li>
-<li>使用bootstrap开发响应式单页应用</li>
-<li>使用coolie构建</li>
-</ul>
-<h3>3.ESIM订货会项目「<a href="http://jxs.snail.com/plat/esim/fair.html"><font color=#0000cd>点击访问</font></a>」</font></h3>
-<p>主导esim订货会项目的开发、维护，主要是手机号的买卖、开户等操作</p>
-<blockquote>
-<p>主要模块</p>
-</blockquote>
-<ul>
-<li>开发自定义count组件，可以很好的兼容各个页面数量的录入、选择</li>
-<li>开发公共顶部、边栏、尾部组件并且根据pathname联动高亮显示</li>
-<li>使用gulp做打包工具，使用gulp-watch结合gulp的less/cssmin/uglify等插件进行文件实时监控，修改完成后自动热部署</li>
-<li>使用nginx作为本地开发服务器,使用nginx反向代理实现接口的访问</li>
-</ul>
-<h2>苏州宽连十方（ 2014年3月 ~ 2015年8月）</h2>
-<h3>1.移动mo生活综合版项目「<a href="http://hi.12580.com"><font color=#0000cd>点击访问</font></a>」</font></h3>
-<p>移动电商手机端网站</p>
-<blockquote>
-<p>使用的技术</p>
-</blockquote>
-<ul>
-<li>css3、zepto开发界面</li>
-<li>轮播图touchslider，iscroll.js</li>
-<li>商城购物车模块(增删改商品、商品计价)，优化接口调用</li>
-<li>通过bridge获取手机经纬度，调用地图api获取城市相关信息传递给讯奇对接酒店机票等</li>
-</ul>
-<h3>2.移动mo生活营销活动项目</h3>
-<p>移动电商营销活动</p>
-<blockquote>
-<p>使用的技术</p>
-</blockquote>
-<ul>
-<li>css3 keyframes动画</li>
-<li>使用canvas开发打地鼠游戏</li>
-<li>前端性能优化（GZIP、图片js懒加载）</li>
-</ul>
-<h2>新大陆软件（ 2012年10月 ~ 2014年3月）</h2>
-<h3>北京移动网上营业厅、自助终端、移动轻应用wap「<a href="http://shop.10086.cn/i/?f=rechargecredit"><font color=#0000cd>点击访问</font></a>」</font></h3>
-<p>负责北京移动网厅充值模块、移动wap端、自助终端后端java开发</p>
-<blockquote>
-<p>使用的技术</p>
-</blockquote>
-<ul>
-<li>html/js/css、jquery、jqm</li>
-<li>struts、ibatis、spring、oracle、weblogic</li>
-</ul>
-<hr />
-<h1>其他项目</h1>
-<h3>包租妹房地产项目「<a href="http://www.baozumei.com"><font color=#0000cd>点击访问</font></a>」</font></h3>
-<p>房地产项目，使用mui开发，有微信公众号、wap端、web端、安卓和ios端，主要功能模块有定位、分享、下拉菜单、分页。</p>
-<blockquote>
-<p>使用的技术</p>
-</blockquote>
-<ul>
-<li>mui，mustache，jquery.video等</li>
-<li>下拉刷新，上拉加载，轮播图，分页加载，h5定位</li>
-<li>左侧菜单，下拉菜单，图片上传，各端的分享</li>
-</ul>
-<hr />
-<h1><strong>技能清单</strong></h1>
-<ul>
-<li>熟练 java,熟悉nodejs</li>
-<li>精通 HTML5/CSS3/js 熟练Jquery/Bootstrap/vue相关,熟悉react/mobx/canvas,了解ng2、mui、rxjs</li>
-<li>熟练 webpack模块化构建工具，熟悉gulp</li>
-<li>熟悉 微信开发，支付宝开放平台</li>
-<li>熟练 Svn/Git</li>
-<li>熟练 使用photoshop切图</li>
-</ul>
+<h4>5.cdn加速访问</h4>
+<p>将静态资源文件放置在static服务器上</p>
 
 </body>
 </html>

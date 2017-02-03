@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>myresume</title>
+<title>RxJs_opetators</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
 /* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
@@ -291,127 +291,96 @@ img {
 </style>
 </head>
 <body>
-<div class="dis-outer">
-    <a href="../../resources/myresume.pdf" download="../../resources/myresume.pdf">导出为PDF</a>
-</div>
-<h1><strong>联系方式</strong></h1>
-<ul>
-<li>手机：13962514061 </li>
-<li>Email：hewenraul@126.com</li>
-<li>QQ/微信号：294083034</li>
-</ul>
-<hr />
-<h1><strong>个人信息</strong></h1>
+<h1>RxJs operator</h1>
 <blockquote>
-<p>个人资料</p>
+<p>创建</p>
 </blockquote>
-<ul>
-<li>何文/男/1990 </li>
-<li>本科/苏州科技学院/应用物理</li>
-<li>工作年限：4年</li>
-<li>Github: <a href="https://github.com/owen002">https://github.com/owen002</a></li>
-<li>Github Pages: <a href="https://owen002.github.io">https://owen002.github.io</a></li>
-</ul>
+<h4>1.from</h4>
+<p>将几乎所有的js对象转换成observable对象</p>
+<h4>2.fromEvent</h4>
+<p>Creates an Observable from DOM events, or Node EventEmitter events or others.</p>
+<h4>3.fromPromise</h4>
+<p>Returns an Observable that just emits the Promise's resolved value, then completes.</p>
+<h4>4.of</h4>
+<p>Emits the arguments you provide, then completes.</p>
+<h4>5.interval</h4>
+<h4>6.timer</h4>
+<h4>7.range</h4>
+<p>Emits a sequence of numbers in a range.</p>
+<pre><code>var numbers = Rx.Observable.range(1, 10);
+numbers.subscribe(x =&gt; console.log(x));
+----
+1，2，3，4，5，6，7，8，9，10
+</code></pre>
+
 <blockquote>
-<p>期望工作</p>
+<p>转换</p>
 </blockquote>
-<ul>
-<li>期望职位：前端开发</li>
-<li>期望薪资：17k</li>
-<li>期望城市：苏州</li>
-</ul>
-<hr />
-<h1><strong>工作经历</strong></h1>
-<h2>苏州游戏蜗牛（ 2015年8月 ~ 至今 ）</h2>
-<h3>1.蜗牛移动免商店掌厅「<a href="http://app.snail.com"><font color=#0000cd>点击下载</font></a>」</font> 蜗牛移动免商店商户「<a href="http://jxs.snail.com/index.html"><font color=#0000cd>点击下载</font></a>」</font></h3>
-<p>免商店客户端免卡部分营销活动，免商店商户客户端免卡业务开发</p>
+<h4>1.switchMap</h4>
+<p>Maps each value to an Observable, then flattens all of these inner Observables using switch.</p>
+<h4>2.map</h4>
+<h4>3.mergeMap</h4>
+<p>Maps each value to an Observable, then flattens all of these inner Observables using mergeAll.</p>
+<h4>4.pluck</h4>
 <blockquote>
-<p>主要模块</p>
+<p>组合</p>
 </blockquote>
-<ul>
-<li>css3动画、flex布局进行页面描绘</li>
-<li>使用蜗牛内部框架结合vuejs进行模块化开发，使用webpack进行打包发布，使用webpack-dev-server进行热替换HRM</li>
-<li>使用vue,vuex,vue-loader,vue-router,vue-resource 基于es6开发，使用babel编译成es5；</li>
-<li>使用webpack打包时使用bundle-loader实现组件的懒加载按需加载，防止加载文件过大导致渲染时间加长；</li>
-<li>运用jsbridge和客户端进行交流</li>
-</ul>
-<h3>2.蜗牛移动经销商项目「<a href="http://jxs.snail.com"><font color=#0000cd>点击访问</font></a>」</font></h3>
-<p>经销商项目的开发和维护。使用jquery+bootstrap，解决了ie8+的兼容性的同时也有很好的体验</p>
+<h4>1.combineLatest</h4>
+<p>Whenever any input Observable emits a value, it computes a formula using the latest values from all the inputs, then emits the output of that formula.</p>
+<pre><code>----
+var weight = Rx.Observable.of(70, 72, 76, 79, 75);
+var height = Rx.Observable.of(1.76, 1.77, 1.78);
+var bmi = weight.combineLatest(height, (w, h) =&gt; w / (h * h));
+bmi.subscribe(x =&gt; console.log('BMI is ' + x));
+----
+BMI is 24.212293388429753
+BMI is 23.93948099205209
+BMI is 23.671253629592222
+这里combineLatest只关心最新weight和height的最新的值，height触发的时候weight恒等于75，height触发了3次
+</code></pre>
+
+<h4>2.zip</h4>
+<p>Combines multiple Observables to create an Observable whose values are calculated from the values, in order, of each of its input Observables.</p>
+<pre><code>zip组合流的时候会取每一个流的第n个值进行组合，必须所有的流都有
+---
+let age$ = Rx.Observable.of(27, 25, 29);
+let name$ = Rx.Observable.of('Foo', 'Bar', 'Beer','11');
+let isDev$ = Rx.Observable.of(true, true, false,true);
+
+Rx.Observable
+    .zip(age$,
+        name$,
+        isDev$,
+        (age, name, isDev) =&gt; ({ age, name, isDev }))
+    .subscribe(x =&gt; console.log(x));
+---
+这里就只显示前三个值，因为age只有3个值
+</code></pre>
+
+<h4>3.merge</h4>
+<p>将流组合在一起互不干扰，得到所有流的所有值
+	var clicks = Rx.Observable.fromEvent(document, 'click');
+	var timer = Rx.Observable.interval(1000);
+	var clicksOrTimer = clicks.merge(timer);
+	clicksOrTimer.subscribe(x =&gt; console.log(x));</p>
+<h4>4.concat</h4>
+<p>Concatenates multiple Observables together by sequentially emitting their values, one Observable after the other.
+	var timer = Rx.Observable.interval(1000).take(4);
+	var sequence = Rx.Observable.range(1, 10);
+	var result = timer.concat(sequence);
+	result.subscribe(x =&gt; console.log(x));
+	----
+	timer触发完了再触发sequence</p>
 <blockquote>
-<p>主要模块</p>
+<p>过滤</p>
 </blockquote>
-<ul>
-<li>通过activeX调用dll读取sim卡信息</li>
-<li>使用jquery.form/webuploader/html5 formdata对象进行图片上传</li>
-<li>列表分页展示(用户点击页码/下拉到底部加载)</li>
-<li>使用bootstrap开发响应式单页应用</li>
-<li>使用coolie构建</li>
-</ul>
-<h3>3.ESIM订货会项目「<a href="http://jxs.snail.com/plat/esim/fair.html"><font color=#0000cd>点击访问</font></a>」</font></h3>
-<p>主导esim订货会项目的开发、维护，主要是手机号的买卖、开户等操作</p>
-<blockquote>
-<p>主要模块</p>
-</blockquote>
-<ul>
-<li>开发自定义count组件，可以很好的兼容各个页面数量的录入、选择</li>
-<li>开发公共顶部、边栏、尾部组件并且根据pathname联动高亮显示</li>
-<li>使用gulp做打包工具，使用gulp-watch结合gulp的less/cssmin/uglify等插件进行文件实时监控，修改完成后自动热部署</li>
-<li>使用nginx作为本地开发服务器,使用nginx反向代理实现接口的访问</li>
-</ul>
-<h2>苏州宽连十方（ 2014年3月 ~ 2015年8月）</h2>
-<h3>1.移动mo生活综合版项目「<a href="http://hi.12580.com"><font color=#0000cd>点击访问</font></a>」</font></h3>
-<p>移动电商手机端网站</p>
-<blockquote>
-<p>使用的技术</p>
-</blockquote>
-<ul>
-<li>css3、zepto开发界面</li>
-<li>轮播图touchslider，iscroll.js</li>
-<li>商城购物车模块(增删改商品、商品计价)，优化接口调用</li>
-<li>通过bridge获取手机经纬度，调用地图api获取城市相关信息传递给讯奇对接酒店机票等</li>
-</ul>
-<h3>2.移动mo生活营销活动项目</h3>
-<p>移动电商营销活动</p>
-<blockquote>
-<p>使用的技术</p>
-</blockquote>
-<ul>
-<li>css3 keyframes动画</li>
-<li>使用canvas开发打地鼠游戏</li>
-<li>前端性能优化（GZIP、图片js懒加载）</li>
-</ul>
-<h2>新大陆软件（ 2012年10月 ~ 2014年3月）</h2>
-<h3>北京移动网上营业厅、自助终端、移动轻应用wap「<a href="http://shop.10086.cn/i/?f=rechargecredit"><font color=#0000cd>点击访问</font></a>」</font></h3>
-<p>负责北京移动网厅充值模块、移动wap端、自助终端后端java开发</p>
-<blockquote>
-<p>使用的技术</p>
-</blockquote>
-<ul>
-<li>html/js/css、jquery、jqm</li>
-<li>struts、ibatis、spring、oracle、weblogic</li>
-</ul>
-<hr />
-<h1>其他项目</h1>
-<h3>包租妹房地产项目「<a href="http://www.baozumei.com"><font color=#0000cd>点击访问</font></a>」</font></h3>
-<p>房地产项目，使用mui开发，有微信公众号、wap端、web端、安卓和ios端，主要功能模块有定位、分享、下拉菜单、分页。</p>
-<blockquote>
-<p>使用的技术</p>
-</blockquote>
-<ul>
-<li>mui，mustache，jquery.video等</li>
-<li>下拉刷新，上拉加载，轮播图，分页加载，h5定位</li>
-<li>左侧菜单，下拉菜单，图片上传，各端的分享</li>
-</ul>
-<hr />
-<h1><strong>技能清单</strong></h1>
-<ul>
-<li>熟练 java,熟悉nodejs</li>
-<li>精通 HTML5/CSS3/js 熟练Jquery/Bootstrap/vue相关,熟悉react/mobx/canvas,了解ng2、mui、rxjs</li>
-<li>熟练 webpack模块化构建工具，熟悉gulp</li>
-<li>熟悉 微信开发，支付宝开放平台</li>
-<li>熟练 Svn/Git</li>
-<li>熟练 使用photoshop切图</li>
-</ul>
+<h4>1.filter</h4>
+<h4>2.debounce/debounceTime</h4>
+<p>It's like delay, but passes only the most recent value from each burst of emissions.
+类似于函数防抖--n毫秒内没有点击才会执行</p>
+<h4>3.take</h4>
+<h4>4.first</h4>
+<h4>5.last</h4>
 
 </body>
 </html>
