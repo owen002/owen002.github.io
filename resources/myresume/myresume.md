@@ -3,6 +3,7 @@
 - 手机：13962514061 
 - Email：hewenraul@126.com
 - QQ/微信号：294083034
+- 住址：工业园区荷韵新村
 
 ---
 
@@ -19,8 +20,14 @@
 >期望工作
 
  - 期望职位：前端开发
- - 期望薪资：17k
+ - 期望薪资：17k左右
  - 期望城市：苏州
+
+---
+
+# **自我评价**
+
+12年毕业，至今做了4年半的web开发，有读过一部分的zepto和jquery源码，前端基础知识还算牢固。有尝试在老项目中使用vuejs开发新需求，目前正在研究rxjs+vuejs，函数式编程能够让代码更加清晰，便于开发和维护。
 
 ---
 
@@ -35,9 +42,9 @@
 
 - css3动画、flex布局进行页面描绘
 - 使用蜗牛内部框架结合vuejs进行模块化开发，使用webpack进行打包发布，使用webpack-dev-server进行热替换HRM
-- 使用vue,vuex,vue-loader,vue-router,vue-resource 基于es6开发，使用babel编译成es5；
-- 使用webpack打包时使用bundle-loader实现组件的懒加载按需加载，防止加载文件过大导致渲染时间加长；
-- 运用jsbridge和客户端进行交流
+- 使用vue,vuex,vue-loader,vue-router,vue-resource 基开发，使用babel编译成es5；
+- //使用webpack打包时使用bundle-loader实现组件的懒加载按需加载，防止加载文件过大导致渲染时间加长；
+- 使用jsbridge和客户端进行交流
 
 ### 2.蜗牛移动经销商项目「[<font color=#0000cd>点击访问</font>](http://jxs.snail.com)」</font>
 经销商项目的开发和维护。使用jquery+bootstrap，解决了ie8+的兼容性的同时也有很好的体验
@@ -47,7 +54,7 @@
 - 通过activeX调用dll读取sim卡信息
 - 使用jquery.form/webuploader/html5 formdata对象进行图片上传
 - 列表分页展示(用户点击页码/下拉到底部加载)
-- 使用bootstrap开发响应式单页应用
+- 使用bootstrap开发单页应用
 - 使用coolie构建
 
 ### 3.ESIM订货会项目「[<font color=#0000cd>点击访问</font>](http://jxs.snail.com/plat/esim/fair.html)」</font>
@@ -94,7 +101,7 @@
 ---
 
 #其他项目
-###包租妹房地产项目「[<font color=#0000cd>点击访问</font>](http://www.baozumei.com)」</font>
+###包租妹房地产项目「[<font color=#0000cd>点击访问</font>](http://www.baozumei.com)」</font>---已关闭
 
 房地产项目，使用mui开发，有微信公众号、wap端、web端、安卓和ios端，主要功能模块有定位、分享、下拉菜单、分页。
 >使用的技术
@@ -108,8 +115,7 @@
 # **技能清单**
 
 - 熟练 java,熟悉nodejs
-- 精通 HTML5/CSS3/js 熟练Jquery/Bootstrap/vue相关,熟悉react/mobx/canvas,了解ng2、mui、rxjs
-- 熟练 webpack模块化构建工具，熟悉gulp
+- 精通 zepto，jquery， 熟练Bootstrap/vue相关,熟悉es6、rxjs、canvas、echarts、react,了解mobx、ng2、mui、d3
+- 熟悉 webpack模块化构建工具，熟悉gulp
 - 熟悉 微信开发，支付宝开放平台
-- 熟练 Svn/Git
 - 熟练 使用photoshop切图
