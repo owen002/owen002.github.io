@@ -3,7 +3,7 @@
     sortsIndex = {
         0: [0],
         1: [1, 2, 4],
-        2: [3, 5, 6]
+        2: [3, 5, 6, 7, 8]
     };
     //markdown语法0
     pageTitles.push('markdown语法');
@@ -25,15 +25,19 @@
     pageTitles.push('ES6_React_constructor');
     pageContext.push('使用ES6编写React组件');
     pageAddr.push('https://owen002.github.io/pages/myblog/ES6_React_constructor.html');
-    //ie8修复
+    //ie8修复5
     pageTitles.push('ie8 遇到的不支持es5修复以及项目中遇到的问题');
     pageContext.push('ie8 遇到的不支持es5修复以及项目中遇到的问题');
     pageAddr.push('https://github.com/owen002/bugs-fixed-collection');
-    //jquery多个顺序请求的问题
+    //search-input先后顺序问题6
+    pageTitles.push('输入框实时显示搜索结果优化');
+    pageContext.push('输入框实时显示搜索结果优化');
+    pageAddr.push('https://owen002.github.io/pages/myblog/search_input_type.html');
+    //jquery多个顺序请求的问题7
     pageTitles.push('使用jQuery发送多个顺序的ajax请求时，promise和deferred对象的使用方法');
     pageContext.push('使用jQuery发送多个顺序的ajax请求时，promise和deferred对象的使用方法');
     pageAddr.push('https://owen002.github.io/pages/myblog/jquery_multiple_request.html');
-    //rxjs解决连续请求ajax的问题
+    //rxjs解决连续请求ajax的问题8
     pageTitles.push('rxjs解决连续请求ajax的问题');
     pageContext.push('rxjs解决连续请求ajax的问题');
     pageAddr.push('https://owen002.github.io/pages/myblog/rxjs_ajax.html');
