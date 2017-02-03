@@ -2,7 +2,7 @@
     var pageTitles = [], pageContext = [], pageAddr = [], sorts = ['工具', '前端', '问题'], sortsIndex = {};
     sortsIndex = {
         0: [0],
-        1: [1, 2, 4, 9],
+        1: [1, 2, 4, 9, 10],
         2: [3, 5, 6, 7, 8]
     };
     //markdown语法0
@@ -45,6 +45,10 @@
     pageTitles.push('rxjs operator简介');
     pageContext.push('rxjs operator简介');
     pageAddr.push('https://owen002.github.io/pages/myblog/RxJs_opetators.html');
+    //前端优化方案10
+    pageTitles.push('常见的前端优化方案');
+    pageContext.push('前端优化方案介');
+    pageAddr.push('https://owen002.github.io/pages/myblog/youhua.html');
 
     var $sideBar = $('#sidebar');
     var page = {
