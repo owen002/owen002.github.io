@@ -2,7 +2,7 @@
     var pageTitles = [], pageContext = [], pageAddr = [], sorts = ['工具', '前端', '问题'], sortsIndex = {};
     sortsIndex = {
         0: [0],
-        1: [1, 2, 4],
+        1: [1, 2, 4, 9],
         2: [3, 5, 6, 7, 8]
     };
     //markdown语法0
@@ -41,6 +41,10 @@
     pageTitles.push('rxjs解决连续请求ajax的问题');
     pageContext.push('rxjs解决连续请求ajax的问题');
     pageAddr.push('https://owen002.github.io/pages/myblog/rxjs_ajax.html');
+    //rxjs operator简介9
+    pageTitles.push('rxjs operator简介');
+    pageContext.push('rxjs operator简介');
+    pageAddr.push('https://owen002.github.io/pages/myblog/RxJs_opetators.html');
 
     var $sideBar = $('#sidebar');
     var page = {
