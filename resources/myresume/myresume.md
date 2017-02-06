@@ -1,3 +1,6 @@
+<h5>
+    <a href="https://owen002.github.io/resources/myresume.pdf">导出为pdf</a>
+</h5>
 # **联系方式**
 
 - 手机：13962514061 
@@ -40,11 +43,11 @@
 
 >主要模块
 
-- css3动画、flex布局进行页面描绘
-- 使用蜗牛内部框架结合vuejs进行模块化开发，使用webpack进行打包发布，使用webpack-dev-server进行热替换HRM
-- 使用vue,vuex,vue-loader,vue-router,vue-resource 基开发，使用babel编译成es5；
-- //使用webpack打包时使用bundle-loader实现组件的懒加载按需加载，防止加载文件过大导致渲染时间加长；
+- 项目原本使用蜗牛内部框架sky，在新的需求中使用vuejs进行模块化开发
 - 使用jsbridge和客户端进行交流
+- 使用webpack进行打包发布，使用webpack-dev-server进行热替换HRM
+- 使用vue,vuex,vue-loader,vue-router,vue-resource 开发，使用babel编译成es5；
+- 使用vue-Router实现组件的懒加载按需加载，防止加载文件过大导致渲染时间加长；
 
 ### 2.蜗牛移动经销商项目「[<font color=#0000cd>点击访问</font>](http://jxs.snail.com)」</font>
 经销商项目的开发和维护。使用jquery+bootstrap，解决了ie8+的兼容性的同时也有很好的体验
