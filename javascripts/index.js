@@ -1,9 +1,11 @@
 (function () {
-    var pageTitles = [], pageContext = [], pageAddr = [], sorts = ['工具', '前端', '问题'], sortsIndex = {};
+    var pageTitles = [], pageContext = [], pageAddr = [], sorts = ['工具', '前端', '问题', 'vue', 'RxJs'], sortsIndex = {};
     sortsIndex = {
         0: [0],
-        1: [1, 2, 4, 9, 10],
-        2: [3, 5, 6, 7, 8]
+        1: [1, 2, 4, 10, 11],
+        2: [3, 5, 6, 7],
+        3: [12],
+        4: [8, 9]
     };
     //markdown语法0
     pageTitles.push('markdown语法');
@@ -49,10 +51,14 @@
     pageTitles.push('常见的前端优化方案');
     pageContext.push('前端优化方案介');
     pageAddr.push('https://owen002.github.io/pages/myblog/youhua.html');
-    //html5 meta
+    //html5 meta11
     pageTitles.push('html5 常见的meta');
     pageContext.push('html5 常见的meta');
     pageAddr.push('https://owen002.github.io/pages/myblog/html5-meta.html');
+    //vue组件之间的通信 12
+    pageTitles.push('vue组件之间的通信');
+    pageContext.push('vue组件之间的通信');
+    pageAddr.push('https://owen002.github.io/pages/myblog/vue-component-comu.html');
 
     var $sideBar = $('#sidebar');
     var page = {
