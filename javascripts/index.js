@@ -49,6 +49,10 @@
     pageTitles.push('常见的前端优化方案');
     pageContext.push('前端优化方案介');
     pageAddr.push('https://owen002.github.io/pages/myblog/youhua.html');
+    //html5 meta
+    pageTitles.push('html5 常见的meta');
+    pageContext.push('html5 常见的meta');
+    pageAddr.push('https://owen002.github.io/pages/myblog/html5-meta.html');
 
     var $sideBar = $('#sidebar');
     var page = {
