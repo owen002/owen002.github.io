@@ -65,6 +65,7 @@
         //2 error
 
 使用es6的promise对象的实现：
+
         function getS(f) {
             return new Promise(function (resolve, reject) {
                 $.ajax({

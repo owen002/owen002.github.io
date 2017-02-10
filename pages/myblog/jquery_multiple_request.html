@@ -357,35 +357,37 @@ img {
     //2 error
 </code></pre>
 
-<p>使用es6的promise对象的实现：
-        function getS(f) {
-            return new Promise(function (resolve, reject) {
-                $.ajax({
-                    url: common.API.recall + '17095220851',
-                    dataType: 'json',
-                    cache: false,
-                    success: function (info) {
-                        if(f){
-                            if (info.code == 0) {
-                                resolve(info)
-                            } else {
-                                reject(info)
-                            }
-                        }else{
-                            if (info.code == 0) {
-                                reject(info)
-                            } else {
-                                resolve(info)
-                            }
+<p>使用es6的promise对象的实现：</p>
+<pre><code>
+    function getS(f) {
+        return new Promise(function (resolve, reject) {
+            $.ajax({
+                url: common.API.recall + '17095220851',
+                dataType: 'json',
+                cache: false,
+                success: function (info) {
+                    if(f){
+                        if (info.code == 0) {
+                            resolve(info)
+                        } else {
+                            reject(info)
                         }
-                    },
-                    error: function () {
-                        reject();
+                    }else{
+                        if (info.code == 0) {
+                            reject(info)
+                        } else {
+                            resolve(info)
+                        }
                     }
-                });
+                },
+                error: function () {
+                    reject();
+                }
             });
-        }</p>
-<pre><code>    getS(false).then(function (info) {
+        });
+    }
+
+    getS(false).then(function (info) {
         console.log('1 success',info)
         return getS(true)
     }, function (info) {
